@@ -167,4 +167,4 @@ if __name__ == '__main__':
     selenium_thread.start()
 
     # Run the Flask app
-    app.run(debug=True, use_reloader=False)  # use_reloader=False to avoid running the thread twice
+    app.run()  # use_reloader=False to avoid running the thread twice
