@@ -23,6 +23,7 @@ app = Flask(__name__)
 # Function to initialize Selenium with DevTools Protocol for network monitoring
 def get_driver():
     chrome_options = Options()
+    chrome_options.add_argument("--headless")  # Run headlessly
     chrome_options.add_argument("--disable-gpu")
     chrome_options.add_argument("--no-sandbox")
     
